@@ -14,7 +14,7 @@ def get_base64_image(image_path):
 # =========================
 st.set_page_config(
     page_title="ꦲꦤꦕꦫꦏ Character App",
-    page_icon="images/icon.png",
+    page_icon="Apps/images/icon.png",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -192,7 +192,7 @@ elif page == "Canvas":
 # =========================
 # CSS CUSTOM
 # =========================
-gunungan = get_base64_image("images/background.png")
+gunungan = get_base64_image("Apps/images/background.png")
 
 st.markdown(f"""
 <style>
