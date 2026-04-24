@@ -229,7 +229,7 @@ except Exception as e:
 # HALAMAN KONTEN
 # =========================
 if page == "Dashboard":
-    st.switch_page(".../dashboard.py")
+    st.switch_page("dashboard.py")
 
 elif page == "Data":
     st.switch_page("pages/data.py")
