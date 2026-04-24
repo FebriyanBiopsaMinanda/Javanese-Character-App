@@ -173,7 +173,7 @@ st.markdown("<div class='nav-divider'></div></div>", unsafe_allow_html=True)
 # HALAMAN KONTEN
 # =========================
 if page == "Dashboard":
-    st.switch_page(".../dashboard.py")
+    st.switch_page("dashboard.py")
 
 elif page == "Data":
     show_character_samples(
