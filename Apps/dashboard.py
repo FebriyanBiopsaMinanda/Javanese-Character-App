@@ -376,7 +376,7 @@ elif page == "Predict":
     st.switch_page('pages/prediksi.py')
 
 elif page == "Canvas":
-    st.switch_page('pages/drawing.py')
+    st.switch_page('pages/canvas.py')
 
 
 # =========================
