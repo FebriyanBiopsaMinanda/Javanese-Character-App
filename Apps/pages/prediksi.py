@@ -7,6 +7,7 @@ from PIL import Image
 import tensorflow as tf
 from tensorflow.keras.applications.resnet50 import preprocess_input
 import base64
+from pathlib import Path
 
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
@@ -16,18 +17,20 @@ def get_base64_image(image_path):
 # =========================
 st.set_page_config(
     page_title="ꦲꦤꦕꦫꦏ Character App",
-    page_icon="images/icon.png",
+    page_icon="Apps/images/icon.png",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-
 # =========================
 # KONFIGURASI FILE
 # =========================
-MODEL_PATH = "../resnet50_aksara_jawa.h5"
-CLASS_NAMES_PATH = "../class_names.npy"
-DATASET_DIR = "../Dataset"
+PATH_BASE = Path(__file__).resolve().parent.parent.parent
+MODEL_PATH =  PATH_BASE / "resnet50_aksara_jawa.h5"
+CLASS_NAMES_PATH =  PATH_BASE / "class_names.npy"
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+DATASET_DIR = os.path.join(BASE_DIR, "Dataset")
 IMG_SIZE = (224, 224)
 
 # =========================
@@ -296,7 +299,7 @@ elif page == "Canvas":
 # =========================
 # CSS CUSTOM
 # =========================
-gunungan = get_base64_image("images/background.png")
+gunungan = get_base64_image("Apps/images/background.png")
 
 st.markdown(f"""
 <style>
