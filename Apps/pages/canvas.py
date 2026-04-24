@@ -249,7 +249,7 @@ if "canvas_key" not in st.session_state:
 # HALAMAN KONTEN
 # =========================
 if page == "Dashboard":
-    st.switch_page(".../dashboard.py")
+    st.switch_page("dashboard.py")
 
 elif page == "Data":
     st.switch_page("pages/data.py")
