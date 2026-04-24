@@ -29,7 +29,8 @@ aksara_jawa_map = {
     "ma": "ꦩ", "ga": "ꦒ", "ba": "ꦧ", "tha": "ꦛ", "nga": "ꦔ"
 }
 
-AKSARA_JAWA_DIR = "../Dataset"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+AKSARA_JAWA_DIR = os.path.join(BASE_DIR, "Dataset")
 
 
 # =========================
